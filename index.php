@@ -41,7 +41,7 @@
 	<ul class="top-list">
 		<?php while ( have_posts() ) : the_post(); ?>
 		<li>
-			<a href="<?php the_premalink(); ?>">
+			<a href="<?php the_permalink(); ?>">
 				<div class="top-list_img">
 					<?php the_post_thumbnail(); ?>
 				</div>
