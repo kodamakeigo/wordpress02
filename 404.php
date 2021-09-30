@@ -1,6 +1,11 @@
 <?php
 get_header();
 ?>
+<?php if ( shortcode_exists( 'wp-structuring-markup-breadcrumb' ) ) : ?>
+<nav class="breadcrumb">
+	<?php echo do_shortcode( '[wp-structuring-markup-breadcrumb]' ); ?>
+</nav>
+<?php endif; ?>
 <main>
 	<article>
 		<h1>お探しのページは見つかりませんでした。</h1>
